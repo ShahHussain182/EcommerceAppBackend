@@ -459,9 +459,9 @@ export const checkAuth = catchErrors(async (req, res) => {
   if (!req.user) {
     return res.status(401).json({ success: false, message: "User not authenticated" });
   }
-console.log(req)
+
 const refreshToken=req.cookies.RefreshToken;
-console.log(refreshToken)
+
   // Return the user object, which now includes the role
   res.status(200).json({ success: true, user: req.user.pomitPassword() });
   

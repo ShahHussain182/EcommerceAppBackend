@@ -98,9 +98,9 @@ app.use(
     store,
     cookie: {
       maxAge: sessionTTL * 1000,
-      secure: false,
+      secure: true,
       httpOnly: true,
-      sameSite: "lax",
+      sameSite: "none",
       path: "/",
     },
   })
