@@ -33,7 +33,7 @@ import { Counter } from "./Models/Counter.model.js";
 import { Category } from "./Models/Category.model.js";
 import { mockCategories } from "./Utils/mockCategories.js";
 import { imageProcessingQueue } from './Queues/imageProcessing.queue.js'; // Import queue
-import { imageProcessingWorker } from './Workers/imageProcessing.worker.js'; // Import worker
+
 import rabbit,{ closeRabbitConnection } from './Utils/lavinmqClient.js';
 
 
