@@ -659,7 +659,8 @@ export const googleAuth = catchErrors(async (req, res) => {
   res.status(200).json({
     success: true,
     user: user.pomitPassword(),
-    message: "Google authentication successful",
+    message: process.env..GOOGLE_CLIENT_ID,
     session: req.session,
+	
   });
 });
