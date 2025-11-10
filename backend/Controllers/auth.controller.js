@@ -659,7 +659,7 @@ export const googleAuth = catchErrors(async (req, res) => {
   res.status(200).json({
     success: true,
     user: user.pomitPassword(),
-    message: process.env..GOOGLE_CLIENT_ID,
+    message: process.env.GOOGLE_CLIENT_ID,
     session: req.session,
 	
   });
